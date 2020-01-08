@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PermissionConponent_Example' do
+  pod 'PermissionConponent', :path => '../'
+
+  target 'PermissionConponent_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

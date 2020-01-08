@@ -1,0 +1,6 @@
+framework module Pods_PermissionConponent_Example {
+  umbrella header "Pods-PermissionConponent_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

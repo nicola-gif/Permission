@@ -1,0 +1,6 @@
+framework module Pods_PermissionConponent_Tests {
+  umbrella header "Pods-PermissionConponent_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

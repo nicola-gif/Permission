@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PermissionConponent_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv5-NO-hfm">
+                                <rect key="frame" x="0.0" y="128" width="375" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraPermissionAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z2b-sJ-dfV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWp-EQ-EtZ">
+                                <rect key="frame" x="0.0" y="178" width="375" height="30"/>
+                                <state key="normal" title="Contact"/>
+                                <connections>
+                                    <action selector="contactPermissionAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Aiw-9y-TfT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDR-TW-Pzr">
+                                <rect key="frame" x="0.0" y="228" width="375" height="30"/>
+                                <state key="normal" title="Calendar"/>
+                                <connections>
+                                    <action selector="calendarPermissionAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nE6-cw-GfP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ3-da-zt4">
+                                <rect key="frame" x="0.0" y="278" width="375" height="30"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordPermissionAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uiw-n6-Juh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JG4-Db-ABM">
+                                <rect key="frame" x="0.0" y="328" width="375" height="30"/>
+                                <state key="normal" title="Location"/>
+                                <connections>
+                                    <action selector="locationPermissionAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="39E-Hm-Jtv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ki9-iV-eSM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0DR-7x-dQF"/>
+                                </constraints>
+                                <state key="normal" title="Photo"/>
+                                <connections>
+                                    <action selector="photoPermissionAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G8n-H1-zao"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sQ3-da-zt4" firstAttribute="leading" secondItem="QDR-TW-Pzr" secondAttribute="leading" id="01s-pl-HEz"/>
+                            <constraint firstItem="JG4-Db-ABM" firstAttribute="leading" secondItem="sQ3-da-zt4" secondAttribute="leading" id="3iw-a2-Hm0"/>
+                            <constraint firstAttribute="trailing" secondItem="Uv5-NO-hfm" secondAttribute="trailing" id="3lM-7K-Kfz"/>
+                            <constraint firstItem="sQ3-da-zt4" firstAttribute="top" secondItem="QDR-TW-Pzr" secondAttribute="bottom" constant="20" id="9E1-d0-Qf3"/>
+                            <constraint firstItem="PWp-EQ-EtZ" firstAttribute="height" secondItem="Uv5-NO-hfm" secondAttribute="height" id="EAG-wp-RPN"/>
+                            <constraint firstItem="QDR-TW-Pzr" firstAttribute="top" secondItem="PWp-EQ-EtZ" secondAttribute="bottom" constant="20" id="Ia6-AS-gf8"/>
+                            <constraint firstItem="Uv5-NO-hfm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KRy-FZ-ty5"/>
+                            <constraint firstItem="QDR-TW-Pzr" firstAttribute="leading" secondItem="PWp-EQ-EtZ" secondAttribute="leading" id="NAN-mg-l56"/>
+                            <constraint firstAttribute="trailing" secondItem="ki9-iV-eSM" secondAttribute="trailing" id="PNG-DH-oR4"/>
+                            <constraint firstItem="ki9-iV-eSM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="RBz-pW-1qC"/>
+                            <constraint firstItem="QDR-TW-Pzr" firstAttribute="width" secondItem="PWp-EQ-EtZ" secondAttribute="width" id="SVr-uF-sx1"/>
+                            <constraint firstItem="Uv5-NO-hfm" firstAttribute="top" secondItem="ki9-iV-eSM" secondAttribute="bottom" constant="20" id="Sb6-Kq-Xhn"/>
+                            <constraint firstAttribute="trailing" secondItem="PWp-EQ-EtZ" secondAttribute="trailing" id="VGC-zE-ag2"/>
+                            <constraint firstItem="QDR-TW-Pzr" firstAttribute="height" secondItem="PWp-EQ-EtZ" secondAttribute="height" id="VTq-nL-qZP"/>
+                            <constraint firstItem="Uv5-NO-hfm" firstAttribute="height" secondItem="ki9-iV-eSM" secondAttribute="height" multiplier="0.681818" id="ZFG-1W-xgD"/>
+                            <constraint firstItem="ki9-iV-eSM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="c52-Pi-xZJ"/>
+                            <constraint firstItem="JG4-Db-ABM" firstAttribute="top" secondItem="sQ3-da-zt4" secondAttribute="bottom" constant="20" id="hgt-SD-Nin"/>
+                            <constraint firstItem="sQ3-da-zt4" firstAttribute="width" secondItem="QDR-TW-Pzr" secondAttribute="width" id="jKD-gF-SAs"/>
+                            <constraint firstItem="PWp-EQ-EtZ" firstAttribute="top" secondItem="Uv5-NO-hfm" secondAttribute="bottom" constant="20" id="l6w-s1-cDm"/>
+                            <constraint firstItem="JG4-Db-ABM" firstAttribute="width" secondItem="sQ3-da-zt4" secondAttribute="width" id="pDz-bW-IDZ"/>
+                            <constraint firstItem="JG4-Db-ABM" firstAttribute="height" secondItem="sQ3-da-zt4" secondAttribute="height" id="rrL-ef-KA0"/>
+                            <constraint firstItem="sQ3-da-zt4" firstAttribute="height" secondItem="QDR-TW-Pzr" secondAttribute="height" id="vpN-3b-kR1"/>
+                            <constraint firstItem="PWp-EQ-EtZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="x3O-Vb-7Dy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module PermissionConponent {
+  umbrella header "PermissionConponent-umbrella.h"
+
+  export *
+  module * { export * }
+}
